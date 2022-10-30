@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+    animation: fadeIn 3s;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+@media all and (min-width: 700px) {
+    header img{
+        width: 400px;
+        height: auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav_links {
+        display: flex;
+        flex-direction: row;
+    }
+    .pricing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+
+    .card {
+        width: 300px;
+    }
+
+    .gallery img {
+        width: 300px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+        animation: none;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
