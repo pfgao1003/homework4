@@ -11,6 +11,9 @@ header {
 header img{
     width: 100%;
     height: auto;
+}
+
+#logo {
     animation: fadeIn 3s;
 }
 
