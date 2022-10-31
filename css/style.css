@@ -13,10 +13,6 @@ header img{
     height: auto;
 }
 
-#logo {
-    animation: fadeIn 3s;
-}
-
 .nav_links {
     display: flex;
     flex-direction: column;
@@ -78,10 +74,8 @@ header img{
 
 }
 
-@media (prefers-reduced-motion: reduce) {
-    #logo {
-        animation: none;
-    }
+#logo {
+    animation: fadeIn 3s;
 }
 
 @keyframes fadeIn {
@@ -90,5 +84,11 @@ header img{
     }
     100% {
         opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+        animation: none;
     }
 }
